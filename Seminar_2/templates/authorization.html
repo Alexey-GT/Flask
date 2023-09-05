@@ -1,0 +1,14 @@
+{%extends "base.html"%}
+
+{% block title %}
+{{task}}
+{% endblock %}
+
+{% block content %}
+<h1>Авторизация</h1>
+<form action="/submit" method="post">
+    <input type="text" name="name" placeholder="Введите ваше Имя">
+    <input type="password" name="auth_pass" placeholder="Введите ваше пароль">
+    <input type="submit" value="Отправить">
+</form>
+{% endblock %}
